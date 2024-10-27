@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://Antovex.github.io/",
+  "homepage": "https://Antovex.github.io/projectmgmtfe/",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.11.8",
