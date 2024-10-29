@@ -39,7 +39,7 @@ function App() {
     <>
       {/* Wrapping in Apollo which is a client used to communicate with graphql */}
       <ApolloProvider client={client}>
-        <Router basename="/projectmgmtfe">
+        <Router>
           <Header />
           <div className="container">
             <Routes>
