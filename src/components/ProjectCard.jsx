@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // This component is used to display each individual projects
 export default function ProjectCard({ project }) {
     return (
@@ -8,9 +10,7 @@ export default function ProjectCard({ project }) {
                         <h5 className='card-title'>
                             { project.name }
                         </h5>
-                        <a className='btn btn-light' href={`/projects/${project.id}`}>
-                        View
-                        </a>
+                        <Link to={`/projects/${project.id}`}>View</Link>
                     </div>
                     <p className="small">
                         Status: <strong>{project.status}</strong>
