@@ -39,13 +39,13 @@ function App() {
     <>
       {/* Wrapping in Apollo which is a client used to communicate with graphql */}
       <ApolloProvider client={client}>
-        <Router>
+        <Router basename="/projectmgmtfe">
           <Header />
           <div className="container">
             <Routes>
-              <Route path='/projectmgmtfe/' element={<Home />} />
-              <Route path='/projectmgmtfe/projects/:id' element={<Project />} />
-              <Route path='/projectmgmtfe/*' element={<NotFound />} />
+              <Route path='/' element={<Home />} />
+              <Route path='/projects/:id' element={<Project />} />
+              <Route path='*' element={<NotFound />} />
             </Routes>
           </div>
         </Router>
