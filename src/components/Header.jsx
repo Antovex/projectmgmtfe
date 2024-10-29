@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <nav className='navbar mb-4 p-0'>
             <div className="container">
-                <a className="navbar-brand" href="/">
+                <a className="navbar-brand" href={() => false}>
                     <div className="d-flex">
                         <img src={logo} alt="logo" className="mr-2" />
                         <div>Project Management System</div>

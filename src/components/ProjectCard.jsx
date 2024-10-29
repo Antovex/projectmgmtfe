@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
                         <h5 className='card-title'>
                             { project.name }
                         </h5>
-                        <Link to={`/projects/${project.id}`}>View</Link>
+                        <Link to={`/projects/${project.id}`} className='btn btn-light'>View</Link>
                     </div>
                     <p className="small">
                         Status: <strong>{project.status}</strong>
