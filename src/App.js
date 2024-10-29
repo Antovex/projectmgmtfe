@@ -44,8 +44,8 @@ function App() {
           <div className="container">
             <Routes>
               <Route path='/projectmgmtfe/' element={<Home />} />
-              <Route path='/projects/:id' element={<Project />} />
-              <Route path='*' element={<NotFound />} />
+              <Route path='/projectmgmtfe/projects/:id' element={<Project />} />
+              <Route path='/projectmgmtfe/*' element={<NotFound />} />
             </Routes>
           </div>
         </Router>
